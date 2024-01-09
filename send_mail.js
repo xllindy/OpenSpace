@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function() {
             })
             .catch(error => {
                 console.error(error);
-                alert("Succesfully submitted");
+                alert("Sorry, something went wrong. Please try again later.");
             });
         });
     }
