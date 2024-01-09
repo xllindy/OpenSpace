@@ -838,19 +838,28 @@ textarea {
 /* 404 error */
 .error-container {
     text-align: center;
-    padding: 100px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .error-heading {
     font-size: 5em;
-    color: #ff0000; 
+    color: #040633;
     margin-bottom: 20px;
 }
 
 .error-message {
     font-size: 1.5em;
-    color: #333; 
+    color: #333;
     margin-bottom: 30px;
+}
+
+.error-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
 
 .error-link {
@@ -861,4 +870,9 @@ textarea {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.error-link:hover {
+    background-color: #00509e; 
 }
