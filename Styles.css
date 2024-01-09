@@ -23,7 +23,7 @@ body {
 }
 
 .logo img {
-    max-height: 33px;
+    max-height: 30px;
     margin-right: 6px;
     object-fit: contain;
 }
@@ -735,8 +735,8 @@ textarea {
 
 .FAQ-content {
     color:#747474;
-    font-weight: lighter;
-    font-size: 1.2em;
+    font-weight: 60;
+    font-size: 0.6em;
 }
 
 
