@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
-    const contactForm = document.querySelector(".contact-form form");
+    const contactForm = document.getElementById("contactForm");
 
     if (contactForm) {
         contactForm.addEventListener("submit", function(event) {
