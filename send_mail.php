@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $message, $headers)) {
         echo "Mail sent successfully!";
     } else {
-        error_log("Failed to send mail.");
+        http_response_code(500);
         echo "Sorry, something went wrong. Please try again later.";
     }
 }
