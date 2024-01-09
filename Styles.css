@@ -23,8 +23,8 @@ body {
 }
 
 .logo img {
-    max-height: 42px;
-    margin-right: 10px;
+    max-height: 33px;
+    margin-right: 6px;
     object-fit: contain;
 }
 
