@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
             const formData = new FormData(contactForm);
 
-            fetch("https://formspree.io/f/mjvnvnjw", {
+            fetch("https://formspree.io/lindy.rutten@student.fontys.nl", {
                 method: "POST",
                 body: formData
             })
