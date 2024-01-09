@@ -1,9 +1,10 @@
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "lindy.rutten@student.fontys.nl";
     $subject = "New Contact Form Submission from $name";
     $headers = "From: $email";
 
