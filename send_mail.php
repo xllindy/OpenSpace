@@ -8,6 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "New Contact Form Submission from $name";
     $headers = "From: $email";
 
-    mail($to, $subject, $message, $headers);
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Mail sent successfully!";
+    } else {
+        error_log("Failed to send mail.");
+        echo "Sorry, something went wrong. Please try again later.";
+    }
 }
 ?>
