@@ -21,7 +21,7 @@ function submitRegistrationForm() {
         License_Plate: License_Plate,
     };
 
-    fetch("https://192.168.157.123:3000/customers", {
+    fetch("http://192.168.157.123:3000/customers", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
