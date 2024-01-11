@@ -389,7 +389,7 @@ footer {
 }
 
 /* Map */
-.text {
+.textmap {
     position: flex;
     color:#646464;
     font-size: larger;
@@ -399,7 +399,6 @@ footer {
     width: 100%;
     height: 450px;
     margin: 20px 0;
-    margin-bottom: -50px;
     position: relative; 
 }
 
@@ -819,20 +818,101 @@ textarea {
 }
 
 /* Book Now */
-.book-now-container {
+.main2 {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    max-height: 510px;
+}
+
+.booking-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+  }
+
+.booking-form2 {
     flex: 1;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 25%;
+    height: 515px;;
+}
+.location-search2 {
+    margin-bottom: 20px;
 }
 
-.map-container {
+.date-picker input,
+.time-picker input {
+    cursor: pointer;
+}
+
+.garage-info2 {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 515px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.garage-info2 {
+    text-align: flex;
+}
+
+.Garage-list {
+    margin-bottom: 10px;
+}
+
+.garage-details {
+    display: flex;
+}
+
+.garage-details img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.garage-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    color: #004080;
+}
+
+.info-garage {
+    font-size: small;
+    margin: 0px;
+    color:#747474;
+}
+
+.Garage-list:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; 
+}
+
+.map-container2 {
     flex: 1;
     position: relative;
-}
+    height: 500px;
+  }
 
-#map {
+#map2 {
     width: 100%;
-    height: 400px;
+    height: 100%;
+    height: 515px;
     border: 1px solid #ddd;
+    border-radius: 10px;
+    z-index: 0;
 }
 
 /* 404 error */
