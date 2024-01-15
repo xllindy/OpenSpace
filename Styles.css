@@ -127,7 +127,10 @@ main {
 
 .background-layer {
     position: absolute;
-    background-color: #e3f1ff;
+    background-image: url("Images/MainLayer.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
     top: 0;
     left: 0;
     width: 100%;
@@ -346,6 +349,14 @@ footer {
     max-width: 1200px;
     margin: 20px auto;
     margin-top:15%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.marketing-container.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .marketing-points {

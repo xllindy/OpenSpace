@@ -33,7 +33,7 @@ async function registerAccount(Name, Email_Adress, Phone_Number, Password,IBAN, 
         case "License plate is invalid":
             window.alert("Please enter a valid license plate");
             break;
-        case "Phonen number is invalid":
+        case "Phone number is invalid":
             window.alert("Please enter a valid phone number");
         case "Customer already exists":
             window.alert("A account with this username and email already exists");
