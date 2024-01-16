@@ -23,7 +23,7 @@
         <a href="index.html">Home</a>
         <a href="Map.html">Locations</a>
         <div class="dropdown">
-            <a href="HowWork.html">About OpenSpace<i class="fas fa-angle-down arrow-icon"></i></a>
+            <a href="HowWork.html" style="font-weight: bold;">About OpenSpace<i class="fas fa-angle-down arrow-icon"></i></a>
             <div class="dropdown-content">
                 <a href="HowWork.html">How it Works</a>
                 <a href="AboutUs.html">Our team</a>
@@ -40,28 +40,27 @@
         <button class="button-Setting"><a href="BookNow.html" class="button-text">Book now</a></button>
     </nav>
     <main>
-        <div id="registration-container" class="create-account-container">
-            <div class="image-container">
-                <img src="Images/SignUp.png">
+        <div class="main-terms">
+            <h1 class="slogan">Privacy Policy</h1>
+            <div class="terms-container">
+                <p class="terms-text"><strong>1. Collection of Personal Information</strong></p>
+                <p>We collect personal information, such as names and email addresses, when voluntarily submitted by our visitors. The information you provide is used to fulfill your specific request.</p>
+                
+                <p class="terms-text"><strong>2. Cookies</strong></p>
+                <p>We may use cookies to enhance your experience on our site. Cookies are small text files placed on your computer for record-keeping purposes.</p>
+    
+                <p class="terms-text"><strong>3. How We Use Your Information</strong></p>
+                <p>We may use the information we collect to send you promotional materials, respond to your questions, and improve our services.</p>
+    
+                <p class="terms-text"><strong>4. Security</strong></p>
+                <p>We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.</p>
+    
+                <p class="terms-text"><strong>5. Updates</strong></p>
+                <p>We may update this Privacy Policy from time to time. You are advised to review this Privacy Policy periodically for any changes.</p>
+    
+                <p class="terms-text"><strong>6. Contact Us</strong></p>
+                <p>If you have any questions about this Privacy Policy, please contact us at privacy@openspace.com.</p>
             </div>
-            <h1>Create an account</h1>
-                <form id="registrationForm">
-                    <input class="create-label" type="text" id="name" name="name" placeholder="Full Name" required>
-                    <input class="create-label" type="email" id="email" name="email" placeholder="Email Address" required>
-                    <input class="create-label" type="password" id="password" name="password" placeholder="Password" required>
-                    <input class="create-label" type="tel" id="phone" name="phone" placeholder="Phone" required>
-                    <input class="create-label" type="text" id="iban" name="iban" placeholder="IBAN" required>
-                    <input class="create-label" type="text" id="license_plate" name="license_plate" placeholder="License Plate" required>
-    
-                    <label for="legal_terms">I agree to the <a href="LegalTerms.html" target="_blank">Legal Terms</a> & <a href="PrivacyPolicy.html">Privacy Policy</a></label>
-                    <input type="checkbox" id="legal_terms" name="legal_terms" required>
-                    <label>Disabled?</label>
-                    <input type="checkbox" id="isDisabled" name="isDisabled">
-    
-                    <button type="button" onclick="submitRegistrationForm()" class="button-Setting">Sign Up</button>
-                </form>
-                <p>Already have an account? <a href="Login.html">Log In</a></p>
-            
         </div>
     </main>
     <footer>
@@ -93,7 +92,7 @@
                 <div class="newsletter">
                     <form>
                         <label for="newsletter">Subscribe to our newsletter:</label>
-                        <input type="email" id="Newsemail" name="Newsemail" placeholder="Your email" required>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
                         <button type="submit" class="button-Setting">Subscribe</button>
                     </form>
                 </div>
@@ -106,7 +105,6 @@
         </div>
         <p class="copyright">© 2023 OpenSpace. All rights reserved.</p>
     </footer>
-    <script src="SignUpModal.js"></script>
     <script src="Login.js"></script>
     <script src="Settings.js"></script>
 </body>

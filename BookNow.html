@@ -12,23 +12,22 @@
 <body>
     <div class="empty-bar">
         <div class="logo">
-            <img src="Images/LogoPicture.png" alt="Logo">
+            <a href="index.html"><img src="Images/LogoPicture.png" alt="Logo"></a>
         </div>
-        <h1 class="nav-header"><span class="open-text">Open</span><span class="space-text">Space</span></h1>
+        <h1 class="nav-header"><span class="open-text">Open</span><span class="space-text">S<img src="Images/P.png" width="25" height="25" style="margin-bottom: -5px;">ace</span></h1>
         <div class="user-actions">
             <a href="Login.html" class="button-Setting button-text">Log In</a>
             <a href="SignUp.html" class="button-Setting button-text">Sign Up</a>
         </div>
     </div>
     <nav>
-        <a href="index.html" style="font-weight: bold;">Home</a>
-        <a href="Map.html">Interactive map</a>
+        <a href="index.html">Home</a>
+        <a href="Map.html">Locations</a>
         <div class="dropdown">
             <a href="HowWork.html">About OpenSpace <i class="fas fa-angle-down arrow-icon"></i></a>
             <div class="dropdown-content">
                 <a href="HowWork.html">How it Works</a>
                 <a href="AboutUs.html">Our team</a>
-                <a href="Locations.html">Locations</a>
                 <a href="LegalTerms.html">Legal terms</a>
             </div>
         </div>
@@ -41,33 +40,179 @@
         </div>
         <button class="button-Setting"><a href="BookNow.html" class="button-text">Book now</a></button>
     </nav>
-    <main>
-        <div class="main">
-            <div class="book-now-container">
-                <h2 class="slogan">Book Your Space</h2>
-                <p class="speech">Reserve your parking space now and experience a hassle-free parking solution.</p>
-                <form class="book-now-form">
-                    <label for="location">Select Garage:</label>
-                    <select id="location" name="location">
-                        <option value="location1">Garage 1</option>
-                        <option value="location2">Garage 2</option>
-                        <option value="location3">Garage 3</option>
+    <main2>
+        <div class="booking-container2">
+            <div class="booking-form2">
+                <h2 class="slogan">Book Your Parking Space</h2>
+                <form>
+                    <div class="location-search">
+                        <label for="location">Search Location:</label>
+                        <input type="text" id="locationSearch" name="location" placeholder="Enter location" required>
+                        <button id="searchButton" class="button-Setting">Search</button>
+                    </div>
+                </form>
+                <form>
+                    <label for="garage">Select Garage:</label>
+                    <select id="garage" name="garage">
+                        <option value="garage1">Q-Park Centrum de Admirant</option>
+                        <option value="garage2">Q-Park Hooghuis</option>
+                        <option value="garage3">Q-Park Fuutlaan</option>
+                        <option value="garage4">Q-Park de Bijenkorf</option>
+                        <option value="garage5">Q-Park Kennedyplein</option>
+                        <option value="garage5">Q-Park Stadhuisplein</option>
+                        <option value="garage5">Q-Park Heuvel</option>
+                        <option value="garage5">Q-Park Mathildelaan</option>
+                        <option value="garage5">Q-Park Witte Dame</option>
                     </select>
-
-                    <label for="date">Select Date:</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <label for="time">Select Time:</label>
-                    <input type="time" id="time" name="time" required>
-
+    
+                    <div class="date-time-picker">
+                        <div class="date-picker">
+                            <label for="date">Select Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+            
+                        <div class="time-picker">
+                            <label for="time">Select Time:</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>    
                     <button type="submit" class="button-Setting">Confirm Booking</button>
                 </form>
             </div>
-            <div class="map-container">
-                <div id="map"></div>
+    
+            <div class="garage-info2">
+                <h2 class="slogan">Garages Nearby</h2>
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Centrum.jpg" alt="Garage 1">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Centrum de Admirant:</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 150</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: Yes</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Hooghuis.jpg" alt="Garage 2">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Hooghuis</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 273</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: No</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/eindhoven-fuutlaan-qpark.jpg" alt="Garage 3">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Fuutlaan</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 26</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €6.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: Yes</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Bijenkorf.jpg" alt="Garage 4">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park de Bijenkorf</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 97</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: No</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: No</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Kennedyplein.jpg" alt="Garage 5">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Kennedyplein</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 36</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €6.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: Yes</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Parkeergarage_Stadhuisplein_Eindhoven.jpg" alt="Garage 6">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Stadhuisplein</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 128</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: No</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Heuvel.jpg" alt="Garage 7">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Heuvel</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 114</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: Yes</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Mathildelaan.jpg" alt="Garage 8">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Mathildelaan</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 283</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: Yes</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Garage-list">
+                    <div class="garage-details">
+                        <img src="Images/Witte-Dame.jpg" alt="Garage 9">
+                        <div class="garage-content">
+                            <p class="garage-name">Q-Park Witte Dame</p>
+                            <p class="info-garage"><i class="fas fa-car"></i> Free spots: 269</p>
+                            <p class="info-garage"><i class="fas fa-dollar-sign"></i> Hourly costs: €9.00</p>
+                            <p class="info-garage"><i class="fas fa-plug"></i> Electric parking: Yes</p>
+                            <p class="info-garage"><i class="fas fa-wheelchair"></i> Invalid spots: Yes</p>
+                            <p class="info-garage"><i class="far fa-clock"></i> Open 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container2">
+                <div id="map2"></div>
             </div>
         </div>
-    </main>
+    </main2>
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -77,10 +222,10 @@
                 <div class="footer-links">
                     <h2>About Openspace</h2>
                     <ul>
-                        <li><a href="Business.html">About</a></li>
+                        <li><a href="HowWork.html">About</a></li>
                         <li><a href="AboutUs.html">Our Team</a></li>
                         <li><a href="#">Get the App</a></li>
-                        <li><a href="Locations.html">Our Locations</a></li>
+                        <li><a href="Map.html">Our Locations</a></li>
                         <li><a href="LegalTerms.html">Terms of Service</a></li>
                     </ul>
                 </div>
@@ -111,7 +256,7 @@
         <p class="copyright">© 2023 OpenSpace. All rights reserved.</p>
     </footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="map.js"></script>
+    <script src="map2.js"></script>
     <script src="Login.js"></script>
     <script src="Settings.js"></script>
 </body>
